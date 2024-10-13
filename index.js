@@ -32,7 +32,7 @@ function collectMinute(event){
     let running = runningTime.value
     let cycling = cyclingTime.value 
 
-    if(walking.length === 0 && running.length === 0 && cycling.length === 0){
+    if(walking.length === 0 || running.length === 0 || cycling.length === 0){
         alert("All field must be completed!")
         return
     }else {
